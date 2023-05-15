@@ -6,7 +6,7 @@ version: 8.x-1.0-dev
 core_version_requirement: ^9
 base theme: stanford_basic
 libraries:
-  - stanford_starter/allpages
+  - casbs_subtheme/allpages
 
 regions:
   page_top: 'Page top'

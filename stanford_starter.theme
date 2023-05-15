@@ -7,15 +7,15 @@
 /**
  * Prepares variables for the html.html.twig template.
  */
-function stanford_starter_preprocess_html(&$variables) {
+function casbs_subtheme_preprocess_html(&$variables) {
   $variables['stanford_basic_path'] = drupal_get_path('theme', 'stanford_basic');
 }
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
-function stanford_starter_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-  if (!empty($variables['elements']['#id']) && $variables['elements']['#id'] == 'stanford_starter_search') {
+function casbs_subtheme_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['elements']['#id']) && $variables['elements']['#id'] == 'casbs_subtheme_search') {
     $suggestions[] = 'block__stanford_basic_search';
   }
 }
